@@ -83,7 +83,7 @@
       <file leaf-file-name="Bootstrap.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/akka-remote/src/main/java/com/aestas/blog/akka/remote/Bootstrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.84522">
+            <state line="30" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="0.5356601">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,7 +121,7 @@
       <file leaf-file-name="AkkaClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/akka-application/src/main/java/com/aestas/blog/akka/client/AkkaClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="117" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+            <state line="15" column="44" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -523,7 +523,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JavaRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294347" sideWeight="0.0" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -583,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/cache/se.scalablesolutions.akka/akka-typed-actor/jars/akka-typed-actor-1.1-SNAPSHOT.jar!/akka/actor/TypedActor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="39" selection-start="22593" selection-end="22593" vertical-scroll-proportion="0.72471327">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="4" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
@@ -604,19 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/akka-remote/src/main/resources/akka.conf">
+    <entry file="jar://$USER_HOME$/.gradle/cache/se.scalablesolutions.akka/akka-typed-actor/jars/akka-typed-actor-1.1-SNAPSHOT.jar!/akka/actor/TypedActor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+        <state line="64" column="30" selection-start="20549" selection-end="20549" vertical-scroll-proportion="0.34621578">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/akka-application/src/main/java/com/aestas/blog/akka/client/AkkaClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="117" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,9 +613,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/akka-application/src/main/java/com/aestas/blog/akka/client/AkkaClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="44" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-remote/src/main/resources/akka.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="2" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/akka-remote/src/main/java/com/aestas/blog/akka/remote/Bootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.84522">
+        <state line="30" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="0.5356601">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
