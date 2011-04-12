@@ -39,7 +39,7 @@ public class Bootstrap {
         ActorRef[] actors = registry().actors();
         for (ActorRef ar : actors) {
             System.out.println("ACTOR ID: " + ar.getId());
-            ar.start();
+            // ar.start(); // is that needed?
         }
     }
 }
