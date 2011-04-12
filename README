@@ -1,0 +1,12 @@
+AKKA JAVA SAMPLE CODE
+=====================
+
+http://akka.io
+
+- Actors
+TODO
+
+- Remote Actors
+
+1. start the Akka server 'gradle jettyRun' from akka-remote project
+2. run the AkkaClient.java class from the akka-application project (best using Idea)
