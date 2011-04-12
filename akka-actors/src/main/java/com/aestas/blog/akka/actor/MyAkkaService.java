@@ -12,7 +12,7 @@ public class MyAkkaService extends TypedActor implements MyService  {
     public Future<String> getServiceData(final String id) {
 
         testValue++;
-        return future("hello" + id);
+        return future("hello :: " + testValue);
     }
 
     public Future<Integer> getTestValue() {
