@@ -1,0 +1,61 @@
+allprojects {
+
+  springVersion = "3.0.5.RELEASE"
+  akkaVersion = "1.1-SNAPSHOT"
+  resteasyVersion = "2.0.1.GA"
+  cxfVersion = "2.3.1"
+  logbackVersion = "0.9.28"
+  guavaVersion = "r08"
+  
+  repositories {
+    add(new org.apache.ivy.plugins.resolver.FileSystemResolver()) {
+      name = 'localRepository'
+      latestStrategy = new org.apache.ivy.plugins.latest.LatestTimeStrategy()
+      addArtifactPattern(libDir + '/[organization]/[artifact]/[ext]s/[artifact]-[revision].[ext]')
+    }
+
+    mavenRepo urls: "http://repository.jboss.org/nexus/content/groups/public/"
+    mavenRepo urls: "https://oss.sonatype.org/content/repositories/sourceforge-releases/"
+    mavenRepo urls: "http://akka.io/repository/"
+    mavenRepo urls: "http://guiceyfruit.googlecode.com/svn/repo/releases/"
+    mavenRepo urls: "http://repository.jboss.org/maven2/"
+    mavenCentral()
+  }
+
+  springLibraries = ["org.springframework:spring-core:$springVersion",
+          "org.springframework:spring-aop:$springVersion",
+          "org.springframework:spring-context:$springVersion",
+          "org.springframework:spring-web:$springVersion",
+          "org.springframework:spring-beans:$springVersion",
+          "org.springframework:spring-oxm:$springVersion",
+          "org.springframework:spring-parent:$springVersion",
+          "org.springframework:spring-webmvc:$springVersion",
+          "org.springframework:spring-jdbc:$springVersion",
+          "org.springframework:spring-tx:$springVersion",
+          "org.springframework:spring-orm:$springVersion",
+          "cglib:cglib:2.2",
+          "org.aspectj:aspectjrt:1.6.10",
+          "org.aspectj:aspectjweaver:1.6.10"
+
+  ]
+
+  akkaLibraries = ["se.scalablesolutions.akka:akka-actor:$akkaVersion",
+          "se.scalablesolutions.akka:akka-typed-actor:$akkaVersion"
+          
+  ]
+
+  tomcatLibraries = ['org.apache.tomcat:tomcat-catalina-ant:7.0.11']
+
+  jacksonLibraries = ['org.codehaus.jackson:jackson-all:1.7.1']
+
+  loggerLibraries = ["ch.qos.logback:logback-classic:$logbackVersion", "ch.qos.logback:logback-core:$logbackVersion"]
+
+  testing = [
+          "org.springframework:spring-test:$springVersion",
+          'junit:junit:4.8.2',
+          'org.mockito:mockito-all:1.8.5',
+          'hsqldb:hsqldb:1.8.0.10',
+          'org.hamcrest:hamcrest-all:1.1'
+  ]
+
+}

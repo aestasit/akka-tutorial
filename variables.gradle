@@ -1,0 +1,10 @@
+///////////////////////////////////////////////////////////////////////////////
+// Common directories
+///////////////////////////////////////////////////////////////////////////////
+
+mainDir = "$rootProject.buildFile.parentFile.path"
+libDir = "$mainDir/lib"
+configDir = "$mainDir/configuration"
+dbDir = "$mainDir/database"
+scriptDir = "$mainDir/bin"
+domainConf = "$mainDir/configuration" + "/domain/"

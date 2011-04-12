@@ -1,0 +1,53 @@
+apply from: 'variables.gradle'
+apply from: 'dependencies.gradle'
+
+version = '1.0-SNAPSHOT'
+group = 'com.aestas.blog'
+dependsOnChildren()
+
+subprojects {
+
+  apply plugin: 'java'
+  apply plugin: 'idea'
+
+  sourceCompatibility = '1.6'
+  targetCompatibility = '1.6'
+  configurations {
+	runtime.exclude group: 'commons-logging', name: 'commons-logging'
+  }
+	
+  dependencies {
+	
+	compile 'org.slf4j:jcl-over-slf4j:1.6.1'
+	compile 'com.aestas:akka-servlet:1.0-SNAPSHOT'
+	compile akkaLibraries
+	compile("se.scalablesolutions.akka:akka-remote:$akkaVersion")
+	
+	// Akka remote dependencies
+	compile 'org.scala-lang:scala-library:2.9.0.RC1'
+	compile 'com.google.protobuf:protobuf-java:2.3.0'
+	compile 'voldemort.store.compress:h2-lzf:1.0'
+	compile 'org.codehaus.jackson:jackson-mapper-asl:1.7.1'
+
+	compile 'org.codehaus.jackson:jackson-core-asl:1.7.1'
+	compile 'commons-io:commons-io:2.0.1'
+	compile 'org.guiceyfruit:guice-all:2.0'
+	compile 'net.debasishg:sjson_2.9.0.RC1:0.10'
+	compile 'org.jboss.netty:netty:3.2.3.Final'
+	compile 'commons-codec:commons-codec:1.4'
+	compile 'se.scalablesolutions.akka:akka-typed-actor:1.1-SNAPSHOT'
+
+    // Akka typed actor dependencies
+    compile 'org.codehaus.aspectwerkz:aspectwerkz:2.2.3'
+    compile 'aopalliance:aopalliance:1.0'
+    compile 'se.scalablesolutions.akka:akka-stm:1.1-SNAPSHOT'
+
+
+
+  }
+
+}
+
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="se.scalablesolutions.akka" module="akka-actor" revision="1.1-SNAPSHOT" status="release" publication="20110411125944"/>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description=""/>
+		
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="system" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="javadoc" visibility="public" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="akka-actor" type="jar" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc"/>
+		<artifact name="akka-actor" type="src" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc" e:classifier="sources"/>
+		<artifact name="akka-actor" type="doc" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc" e:classifier="docs"/>
+		<artifact name="akka-actor" type="pom" ext="pom" conf="compile,runtime,provided,system,optional,sources,javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.9.0.RC1" conf="compile->default(compile)">
+			
+		</dependency>
+	</dependencies>
+</ivy-module>

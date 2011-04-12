@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="se.scalablesolutions.akka" module="akka-remote" revision="1.1-SNAPSHOT" status="release" publication="20110411125828"/>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description=""/>
+		
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="system" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="javadoc" visibility="public" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="akka-remote" type="jar" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc"/>
+		<artifact name="akka-remote" type="src" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc" e:classifier="sources"/>
+		<artifact name="akka-remote" type="doc" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc" e:classifier="docs"/>
+		<artifact name="akka-remote" type="pom" ext="pom" conf="compile,runtime,provided,system,optional,sources,javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="com.google.protobuf" name="protobuf-java" rev="2.3.0" conf="compile->default(compile)"/>
+		<dependency org="voldemort.store.compress" name="h2-lzf" rev="1.0" conf="compile->default(compile)"/>
+		<dependency org="org.codehaus.jackson" name="jackson-mapper-asl" rev="1.7.1" conf="compile->default(compile)"/>
+		
+		
+		<dependency org="org.codehaus.jackson" name="jackson-core-asl" rev="1.7.1" conf="compile->default(compile)"/>
+		<dependency org="commons-io" name="commons-io" rev="2.0.1" conf="compile->default(compile)"/>
+		<dependency org="org.guiceyfruit" name="guice-all" rev="2.0" conf="compile->default(compile)"/>
+		<dependency org="net.debasishg" name="sjson_2.9.0.RC1" rev="0.10" conf="compile->default(compile)"/>
+		<dependency org="org.jboss.netty" name="netty" rev="3.2.3.Final" conf="compile->default(compile)"/>
+		<dependency org="commons-codec" name="commons-codec" rev="1.4" conf="compile->default(compile)"/>
+		<dependency org="se.scalablesolutions.akka" name="akka-typed-actor" rev="1.1-SNAPSHOT" conf="compile->default(compile)">
+			
+			
+			
+			
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.9.0.RC1" conf="compile->default(compile)">
+			
+		</dependency>
+	</dependencies>
+</ivy-module>

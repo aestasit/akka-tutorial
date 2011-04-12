@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="se.scalablesolutions.akka" module="akka-stm" revision="1.1-SNAPSHOT" status="release" publication="20110411131728"/>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description=""/>
+		
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="system" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="javadoc" visibility="public" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="akka-stm" type="jar" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc"/>
+		<artifact name="akka-stm" type="src" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc" e:classifier="sources"/>
+		<artifact name="akka-stm" type="doc" ext="jar" conf="compile,runtime,provided,system,optional,sources,javadoc" e:classifier="docs"/>
+		<artifact name="akka-stm" type="pom" ext="pom" conf="compile,runtime,provided,system,optional,sources,javadoc"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.multiverse" name="multiverse-alpha" rev="0.6.2" conf="compile->default(compile)"/>
+		
+		<dependency org="se.scalablesolutions.akka" name="akka-actor" rev="1.1-SNAPSHOT" conf="compile->default(compile)">
+			
+			
+			
+			
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.9.0.RC1" conf="compile->default(compile)">
+			
+		</dependency>
+	</dependencies>
+</ivy-module>

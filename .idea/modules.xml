@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/akka-actors/akka-actors.iml" filepath="$PROJECT_DIR$/akka-actors/akka-actors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/akka-application/akka-application.iml" filepath="$PROJECT_DIR$/akka-application/akka-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/akka-remote/akka-remote.iml" filepath="$PROJECT_DIR$/akka-remote/akka-remote.iml" />
+    </modules>
+  </component>
+</project>
+
