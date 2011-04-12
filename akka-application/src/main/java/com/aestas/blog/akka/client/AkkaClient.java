@@ -25,7 +25,7 @@ public class AkkaClient {
         Future<String> f =  actor.getServiceData("100");
         String res = f.await().resultOrException().get();
         System.out.println(res);
-
-       System.exit(0);
+        System.out.println(actor.getTestValue().await().resultOrException().get());
+        System.exit(0);
     }
 }

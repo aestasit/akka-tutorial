@@ -7,8 +7,16 @@ import akka.dispatch.Future;
  */
 public class MyAkkaService extends TypedActor implements MyService  {
 
+    private Integer testValue = 0;
 
     public Future<String> getServiceData(final String id) {
+
+        testValue++;
         return future("hello" + id);
+    }
+
+    public Future<Integer> getTestValue() {
+        return future(testValue);
+
     }
 }
